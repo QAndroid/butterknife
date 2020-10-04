@@ -14,8 +14,8 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  * {@literal @}BindView(R.id.title) TextView title;
  * </code></pre>
  */
-@Retention(CLASS) @Target(FIELD)
+@Retention(CLASS) @Target(FIELD)    //@Retention(CLASS)-注解保留到编译器，@Target(FIELD)注解修饰类成员
 public @interface BindView {
   /** View ID to which the field will be bound. */
-  @IdRes int value();
+  @IdRes int value();    //@IdRes 参数类型是整型类型资源id
 }

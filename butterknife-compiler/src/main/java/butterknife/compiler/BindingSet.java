@@ -88,9 +88,9 @@ final class BindingSet {
 
   private TypeSpec createType(int sdk) {
     TypeSpec.Builder result = TypeSpec.classBuilder(bindingClassName.simpleName())
-        .addModifiers(PUBLIC);
+        .addModifiers(PUBLIC);    //添加Public类
     if (isFinal) {
-      result.addModifiers(FINAL);
+      result.addModifiers(FINAL);   //添加final修饰符
     }
 
     if (parentBinding != null) {
